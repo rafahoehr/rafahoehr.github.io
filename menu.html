@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Escolha o Jogo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #000428, #004e92);
+      color: white;
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      background: rgba(0,0,0,0.5);
+      padding: 24px;
+      border-radius: 16px;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+    button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 14px;
+      font-size: 1.1rem;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🎮 Escolha o Jogo</h1>
+    <button onclick="escolher('aventura')">🗺️ Aventura</button>
+    <button onclick="escolher('batman')">🦇 Batman</button>
+    <button onclick="escolher('robotica')">🤖 Robótica</button>
+  </div>
+
+  <script src="menu.js"></script>
+</body>
+</html>
